@@ -23,3 +23,26 @@ This line prints out the computer's choice.
         String result = determineWinner(playerChoice, computerChoice);
 This line calls the determineWinner method, passing in the player's choice and the computer's choice as arguments. It assigns the result to the variable result.
 
+        System.out.println(result);
+        scanner.close();
+This line prints out the result of the game (e.g., "You win!", "You lose!", or "It's a tie!")
+Finally, this line closes the Scanner to free up system resources.
+    
+    static boolean isValidChoice(String choice) {
+        return choice.equalsIgnoreCase("Rock") || choice.equalsIgnoreCase("Paper") || choice.equalsIgnoreCase("Scissors");
+    }
+
+This defines a static method named isValidChoice that takes a String parameter choice. It checks if the choice is "Rock", "Paper", or "Scissors" (ignoring case) and returns true if it is, and false otherwise.
+
+    static String determineWinner(String playerChoice, String computerChoice) {
+        if (playerChoice.equalsIgnoreCase(computerChoice)) {
+            return "It's a tie!";
+        } else if (playerChoice.equalsIgnoreCase("Rock")) {
+            return (computerChoice.equalsIgnoreCase("Scissors")) ? "You win!" : "You lose!";
+        } else if (playerChoice.equalsIgnoreCase("Paper")) {
+            return (computerChoice.equalsIgnoreCase("Rock")) ? "You win!" : "You lose!";
+        } else {
+            return (computerChoice.equalsIgnoreCase("Paper")) ? "You win!" : "You lose!";
+        }
+    }
+This defines a static method named determineWinner that takes two String parameters: playerChoice and computerChoice. It compares these choices to determine the winner of the game and returns a message indicating the result (e.g., "You win!", "You lose!", or "It's a tie!").
