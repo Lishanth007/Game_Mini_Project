@@ -1,6 +1,6 @@
 <b># Game_Mini_Project<b\>
 
-import java.util.Scanner;
+<b>import java.util.Scanner;<b\>
 import java.util.Random;
 These are import statements, which bring in predefined classes that are part of the Java Standard Library. Scanner is a class that allows you to take input from the user, and Random is a class that allows you to generate random numbers.
 
