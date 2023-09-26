@@ -1,4 +1,4 @@
-# Game_Mini_Project
+<b># Game_Mini_Project<b\>
 
 import java.util.Scanner;
 import java.util.Random;
